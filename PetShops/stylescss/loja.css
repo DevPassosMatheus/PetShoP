@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; height: 100%;
+    overflow-x: hidden;
+    
+}
+
+* {
+font-family: 'Heebo', sans-serif;
+
+}
+
+nav {
+text-align: center;
+font-size: 15px;
+display: flex;
+justify-content: end;
+width: 100%; height: 35px;
+}
+
+nav a {
+text-decoration: none;
+color: whitesmoke;
+padding: 12px;
+}
+
+header {
+position: fixed;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 120px; width: 100%;
+background-image: linear-gradient(to left, #463032, #583a3b, #6a4543, #7c514b, #8e5d52);
+z-index: 10000;
+}
+
+
+.iconfavicon {
+width: 6%; height: 100%;
+position: absolute;
+align-self: flex-start;
+}
+
+.barradepesquisa {
+align-self: start;
+width: 600px; height: 30px;
+margin: auto;
+border: none;
+border-radius: 50px;
+margin-bottom: 30px;
+}
+
+.iconmenu {
+align-self: end;
+position: absolute;
+margin-top: 70px;
+display: none;
+}
+
+section {
+position: relative;
+display: flex;
+align-items: center;
+width: 100%; height: 40px;
+font-family: 'Anton', sans-serif;
+color: whitesmoke;
+}
+
+
+ul {
+list-style: none;
+display: flex;
+gap: 40px;
+font-family: 'Tilt Warp', cursive;
+margin-left: 95px;
+}
+
+/* parei aqui */
+
+.categorias {
+position: relative;
+height: 900px; width: 300px;
+float: left;
+justify-content: flex-start;
+margin-top: 120px;
+}
+
+.categorias hr {
+width: 70%; color: gray;
+}
+
+.container {
+height: 2900px; width: calc(100% - 300px);
+float: right;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 50px;
+margin-top: 120px;
+position: relative;
+}
+
+.card-dos-produtos {
+height: 350px; width: 300px;
+margin-top: 60px;
+background-color: #f1efef;
+border: 0.5px hidden #f7f7f7;
+box-shadow: 0 0 2px 2px #cfcccc;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.card-dos-produtos img {
+width: 120px; height: 120px;
+}
+
+
+
+button {
+width: 100px; height: 50px;
+border-radius: 20px;
+border: groove;
+}
+
+button:hover {
+background-color: #cc8d4e;
+cursor: pointer;
+}
+
+ul li {
+ padding: 10px;
+}
+
+ul li:hover {
+cursor:pointer;
+background-color: #cc8d4e;
+
+}
+
+a:hover {
+background-color: #cc8d4e;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    }
+    
+    footer img {
+    height: 32px;
+    width: 32px;
+    }
+    
+    .links-e-infos {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    gap: 300px;
+    }
+@media (max-width: 320px) {
+
+
+.categorias, nav, section {
+display: none;
+}
+
+header {
+width: 100%; height: 60px;
+display: flex;
+justify-content: space-between;
+}
+
+header img {
+width: 70px; height: 70px;
+}
+
+header p {
+color: white;
+align-self: flex-start;
+}
+
+header input {
+display: none;
+}
+
+.container {
+float: none;
+width: 100%;
+
+}
+
+.footer {
+background-image: linear-gradient(to right, #aa7d4d, #b38552, #bc8d58, #c6965d, #cf9e63);
+font-family: 'Anton', sans-serif;
+display: flex;
+flex-wrap: wrap;
+width: 100%; height: 130px;
+justify-content: space-between;
+align-items: center
+
+}
+
+.footer img {
+width: 32px; height: 32px;
+    
+
+
+}
+
+.menu {
+    width: 50px; height: 55px;
+
+}
+
+.card-dos-produtos {
+margin: 0;
+}
+
+}
+
+@media (max-width: 375px) {
+    .categorias, nav, section {
+        display: none;
+        }
+        
+        header {
+        width: 100%; height: 60px;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        header img {
+        width: 70px; height: 70px;
+        }
+        
+        header p {
+        color: white;
+        align-self: flex-start;
+        }
+        
+        header input {
+        display: none;
+        }
+        
+        .container {
+        float: none;
+        width: 100%;
+        
+        }
+        
+        .footer {
+        background-image: linear-gradient(to right, #aa7d4d, #b38552, #bc8d58, #c6965d, #cf9e63);
+        font-family: 'Anton', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; height: 130px;
+        justify-content: space-between;
+        align-items: center
+        
+        }
+        
+        .footer img {
+        width: 32px; height: 32px;
+            
+        
+        
+        }
+        
+        .menu {
+            width: 50px; height: 55px;
+        
+        }
+        
+        .card-dos-produtos {
+        margin: 0;
+        }  
+}
+
+@media (max-width: 425px) {
+
+    .categorias, nav, section {
+        display: none;
+        }
+        
+        header {
+        width: 100%; height: 60px;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        header img {
+        width: 70px; height: 70px;
+        }
+        
+        header p {
+        color: white;
+        align-self: flex-start;
+        }
+        
+        header input {
+        display: none;
+        }
+        
+        .container {
+        float: none;
+        width: 100%;
+        
+        }
+        
+        .footer {
+        background-image: linear-gradient(to right, #aa7d4d, #b38552, #bc8d58, #c6965d, #cf9e63);
+        font-family: 'Anton', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; height: 130px;
+        justify-content: space-between;
+        align-items: center
+        
+        }
+        
+        .footer img {
+        width: 32px; height: 32px;
+            
+        
+        
+        }
+        
+        .menu {
+            width: 50px; height: 55px;
+        
+        }
+        
+        .card-dos-produtos {
+        margin: 0;
+        }
+
+
+}
+
+@media (max-width: 768px) {
+
+.menu {
+display: none;
+}
+
+
+header img {
+width: 52px; height: 52px;
+}
+
+section {
+justify-content: center;
+}
+
+.footer img{
+display: none;
+}
+
+.categorias {
+width: 250px;
+}
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+    .menu {
+        display: none;
+        }
+        
+        
+        header img {
+        width: 62px; height: 62px;
+        margin-left: 100px;
+        }
+        
+        section {
+        justify-content: center;
+        }
+        
+        .footer img{
+        display: none;
+        }
+        
+        .categorias {
+        width: 250px;
+        }
+
+}
+
+
+@media (max-width: 1440px) {
+
+    .menu {
+        display: none;
+        }
+        
+        
+        header img {
+        width: 62px; height: 62px;
+        margin-left: 100px;
+        }
+        
+        section {
+        justify-content: center;
+        }
+        
+        .footer img{
+        display: none;
+        }
+        
+        .categorias {
+        width: 250px;
+        }
+
+}
+

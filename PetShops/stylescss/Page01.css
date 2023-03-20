@@ -1,0 +1,432 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-size: large;
+    overflow-x: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    height: 430px;
+    width: 1920px;
+    background-image: linear-gradient(to right top, #2f2325, #463032, #5e3e3e, #764d48, #8e5d52);
+    display: flex;
+    flex-direction: row;
+}
+
+.favicon {
+    width: 6%;
+    height: 30%;
+    position: absolute;
+}
+
+header h3 {
+    margin-left: 95px;
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.descricao {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    left: 500px;
+    top: 10px;
+    color: white
+}
+
+header h2 {
+    font-size: 50px
+}
+
+header p {
+    align-self: center;
+}
+
+header h2,
+header p,
+header h3 {
+    color: white;
+}
+
+.arte {
+    background-image: url(/artesvisuais/artesite.png);
+    height: 900px;
+    width: 750px;
+    transition: 400ms;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70px;
+    right: -120px;
+}
+
+.arte:hover {
+    filter: drop-shadow(8px 8px 10px #ebb476) saturate(2);
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+/* botão do "Sobre nós!" */
+.inside {
+    padding: 12px;
+    background-color: transparent;
+    border: 1px groove white;
+    color: whitesmoke;
+    border-radius: 5px
+}
+
+/* botão do "Sobre nós!" */
+.inside:hover {
+    background-color: #e9a45f;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    background-color: #e9a45f;
+    cursor: grabbing;
+    border-radius: 10px;
+}
+
+.WhatsApp {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    background-image: url(/artesvisuais/iconeWhatsApp.png);
+    background-repeat: no-repeat;
+    left: 95.8%;
+    top: 90%;
+}
+
+.iconplanta {
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 540px;
+}
+
+.iconplanta img {
+    height: 100%;
+    width: 400px;
+    position: absolute;
+}
+
+
+.container {
+    position: relative;
+    height: 540px;
+    width: 1000px;
+    display: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.redirecionar-loja {
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+}
+
+.elementos-filhos {
+    height: 75%;
+    width: 31%;
+    background-color: none;
+    background-repeat: no-repeat;
+}
+
+#moldura1,
+#moldura2,
+#moldura3 {
+    height: 250px;
+    width: 250px;
+}
+
+.button-redirecionar-loja {
+    width: 50%;
+    height: 40px;
+    background-color: #e9a45f;
+    border-radius: 20px;
+}
+
+.button-redirecionar-loja:hover {
+    background-color: #e9a45f;
+    box-shadow: 5px 5px 5px 0 #e9a45f;
+}
+
+
+.sobrenoscontato{
+    position: relative;
+    height: 730px;
+    width: 100%;
+    background-image: radial-gradient(circle, #2f2325, #463032, #5e3e3e, #764d48, #8e5d52);
+    display: flex;
+    flex-direction: column;
+}
+
+.toptopo {
+    height: 15px;
+    width: 100%;
+    background-color: #463032;
+    position: relative;
+}
+
+.topo {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+}
+
+.meio {
+    height: 500px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.meiomeio{
+    height: 100%;
+    width: 26%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.baixo {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+}
+
+.baixobaixo {
+    height: 15px;
+    width: 100%;
+    background-color: #463032;
+    position: relative;
+}
+
+/* Eu usei a propriepade "persperctive foi usada aqui pra dar o efeito de profundidade. Normalmente, existem apenas dois eixos, o eixo horizontal X e o eixo vertical Y, no entanto, também existe o eixo Z! O eixo Z serve para manipularmos o ponto de vista de quem está visualizando o elemento. Caso tenha dúvidas, estou à disposição no Linkeedin - Matheus Passos  */
+
+.esquerda,
+.direita {
+    width: 730px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisoria1 {
+    width: 100%;
+    border-top: 100px solid #463032;
+    border-left: 700px solid transparent;
+    border-right: 700px solid transparent;
+}
+
+.divisoria2 {
+    width: 100%;
+    border-bottom: 100px solid #463032;
+    border-left: 700px solid transparent;
+    border-right: 700px solid transparent;
+}
+
+.card1 {
+    height: 80%;
+    width: 80%;
+    transform: rotateY(-40deg);
+    text-align: center;
+    transition: 300ms;
+    background-image: url(/artesvisuais/fundoequipe.jpg);
+}
+
+.card2 {
+    height: 80%;
+    width: 80%;
+    transform: rotateY(40deg);
+    text-align: center;
+    transition: 300ms;
+    background-image: url(/artesvisuais/fundoequipe.jpg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+.card1:hover, .card2:hover {
+transform: rotateY(0deg);
+}
+
+
+.adocao {
+width: 100%;
+height: 1450px;
+position: relative;
+background-image: linear-gradient(to bottom, #463032, #583a3b, #6a4543, #7c514b, #8e5d52);
+text-align: center;
+}
+
+.adocao h1 {
+font-size: 140px;
+margin-top: 0;
+}
+
+.incentivo-de-efeito {
+font-size: 38px;
+color: white
+}
+
+.container-adocao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+    
+    .card-dos-animais {
+    width: 340px;
+    height: 430px;
+    border-radius: 40%;
+    align-items: end;
+    gap: 30px
+    }
+
+.adotar-botao {
+ padding: 5px; background-color: transparent;
+ border-radius: 15px;
+ border: 1px groove whitesmoke;
+ color: whitesmoke
+}
+
+    .incentivo {
+        position: relative;
+        height: 200px; width: 60%;
+        background-image: url(/artesvisuais/4.png);
+        filter: grayscale(100%);
+        transition: 0.5s;
+        background-color: gray;
+        background-position: center;
+        margin: auto;
+        border: 1px groove white;
+        border-radius: 50px;
+    }
+        
+ .incentivo:hover {
+filter: grayscale(0);
+ background-image: url(/artesvisuais/5.png);
+ background-color: #87ceeb
+  }
+
+.nome-dos-animais {
+color: whitesmoke;
+}
+
+#agendamento {
+width: 100%;
+height: 1380px;
+text-align: center;
+}
+
+.titulo-do-agendamento {
+font-size: 42px;
+}
+
+.subtitulo {
+font-size: 32px;
+}
+
+.formulario-agendamento {
+    width: 500px;
+    margin: 100px auto;
+    font-size: 16px;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+    box-shadow: 2px 0 8px 8px black;
+  }
+  
+  
+  .formulario-pra-agendar {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select, textarea {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.botao-enviar-agendamento {
+padding: 10px;
+border: 1px solid #e9a45f;
+border-radius: 10px;
+background-color: #e9a45f;
+}
+
+.botao-enviar-agendamento:hover { 
+background-color: #cc8d4e;
+}
+
+footer {
+height: 300px;
+width: 100%;
+background-color: black;
+display: flex;
+justify-content: center;
+}
+
+footer img {
+height: 32px;
+width: 32px;
+}
+
+.links-e-infos {
+display: flex;
+color: white;
+justify-content: space-between;
+gap: 300px;
+}
